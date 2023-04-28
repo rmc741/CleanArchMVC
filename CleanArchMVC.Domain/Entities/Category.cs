@@ -3,9 +3,8 @@ using System.Collections.Generic;
 
 namespace CleanArchMVC.Domain.Entities
 {
-    public sealed class Category
+    public sealed class Category : EntityBase
     {
-        public int Id { get; private set; }
         public string Name { get; private set; }
 
         public Category(string name)
