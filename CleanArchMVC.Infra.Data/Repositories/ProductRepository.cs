@@ -15,21 +15,21 @@ namespace CleanArchMVC.Infra.Data.Repositories
         {
             _productContext = context;
         }
-        public async Task<Product> CreateAsync(Product product)
-        {
-            _productContext.Products.Add(product);
-            await _productContext.SaveChangesAsync();
-            return product;
-        }
-
         public async Task<Product> GetByIdAsync(int? id)
         {
             return await _productContext.Products.FindAsync(id);
         }
 
-        public async Task<IEnumerable<Product>> GetCategoriesAsync()
+        public async Task<IEnumerable<Product>> GetProductsAsync()
         {
             return await _productContext.Products.ToListAsync();
+        }
+
+        public async Task<Product> CreateAsync(Product product)
+        {
+            _productContext.Products.Add(product);
+            await _productContext.SaveChangesAsync();
+            return product;
         }
 
         public async Task<Product> GetProductCategoryAsync(int? id)
