@@ -1,20 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Rafael\\Desktop\\Estudos\\C#\\CleanArchMVC\\CleanArchMVC.Infra.IoC\\CleanArchMVC.Infra.IoC.csproj": {}
+    "C:\\Users\\Rafael\\Desktop\\ESTUDOS\\C#\\CleanArchMVC\\CleanArchMVC.Infra.IoC\\CleanArchMVC.Infra.IoC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Rafael\\Desktop\\Estudos\\C#\\CleanArchMVC\\CleanArchMVC.Application\\CleanArchMVC.Application.csproj": {
+    "C:\\Users\\Rafael\\Desktop\\ESTUDOS\\C#\\CleanArchMVC\\CleanArchMVC.Application\\CleanArchMVC.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Rafael\\Desktop\\Estudos\\C#\\CleanArchMVC\\CleanArchMVC.Application\\CleanArchMVC.Application.csproj",
+        "projectUniqueName": "C:\\Users\\Rafael\\Desktop\\ESTUDOS\\C#\\CleanArchMVC\\CleanArchMVC.Application\\CleanArchMVC.Application.csproj",
         "projectName": "CleanArchMVC.Application",
-        "projectPath": "C:\\Users\\Rafael\\Desktop\\Estudos\\C#\\CleanArchMVC\\CleanArchMVC.Application\\CleanArchMVC.Application.csproj",
+        "projectPath": "C:\\Users\\Rafael\\Desktop\\ESTUDOS\\C#\\CleanArchMVC\\CleanArchMVC.Application\\CleanArchMVC.Application.csproj",
         "packagesPath": "C:\\Users\\Rafael\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Rafael\\Desktop\\Estudos\\C#\\CleanArchMVC\\CleanArchMVC.Application\\obj\\",
+        "outputPath": "C:\\Users\\Rafael\\Desktop\\ESTUDOS\\C#\\CleanArchMVC\\CleanArchMVC.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
           "C:\\Users\\Rafael\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -26,16 +27,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://pkgs.dev.azure.com/Idib/Idib/_packaging/InstitutoNuget/nuget/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Rafael\\Desktop\\Estudos\\C#\\CleanArchMVC\\CleanArchMVC.Domain\\CleanArchMVC.Domain.csproj": {
-                "projectPath": "C:\\Users\\Rafael\\Desktop\\Estudos\\C#\\CleanArchMVC\\CleanArchMVC.Domain\\CleanArchMVC.Domain.csproj"
+              "C:\\Users\\Rafael\\Desktop\\ESTUDOS\\C#\\CleanArchMVC\\CleanArchMVC.Domain\\CleanArchMVC.Domain.csproj": {
+                "projectPath": "C:\\Users\\Rafael\\Desktop\\ESTUDOS\\C#\\CleanArchMVC\\CleanArchMVC.Domain\\CleanArchMVC.Domain.csproj"
               }
             }
           }
@@ -70,26 +69,41 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Rafael\\Desktop\\Estudos\\C#\\CleanArchMVC\\CleanArchMVC.Domain\\CleanArchMVC.Domain.csproj": {
+    "C:\\Users\\Rafael\\Desktop\\ESTUDOS\\C#\\CleanArchMVC\\CleanArchMVC.Domain\\CleanArchMVC.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Rafael\\Desktop\\Estudos\\C#\\CleanArchMVC\\CleanArchMVC.Domain\\CleanArchMVC.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Rafael\\Desktop\\ESTUDOS\\C#\\CleanArchMVC\\CleanArchMVC.Domain\\CleanArchMVC.Domain.csproj",
         "projectName": "CleanArchMVC.Domain",
-        "projectPath": "C:\\Users\\Rafael\\Desktop\\Estudos\\C#\\CleanArchMVC\\CleanArchMVC.Domain\\CleanArchMVC.Domain.csproj",
+        "projectPath": "C:\\Users\\Rafael\\Desktop\\ESTUDOS\\C#\\CleanArchMVC\\CleanArchMVC.Domain\\CleanArchMVC.Domain.csproj",
         "packagesPath": "C:\\Users\\Rafael\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Rafael\\Desktop\\Estudos\\C#\\CleanArchMVC\\CleanArchMVC.Domain\\obj\\",
+        "outputPath": "C:\\Users\\Rafael\\Desktop\\ESTUDOS\\C#\\CleanArchMVC\\CleanArchMVC.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
           "C:\\Users\\Rafael\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -101,9 +115,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://pkgs.dev.azure.com/Idib/Idib/_packaging/InstitutoNuget/nuget/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
@@ -131,26 +143,41 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Rafael\\Desktop\\Estudos\\C#\\CleanArchMVC\\CleanArchMVC.Infra.Data\\CleanArchMVC.Infra.Data.csproj": {
+    "C:\\Users\\Rafael\\Desktop\\ESTUDOS\\C#\\CleanArchMVC\\CleanArchMVC.Infra.Data\\CleanArchMVC.Infra.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Rafael\\Desktop\\Estudos\\C#\\CleanArchMVC\\CleanArchMVC.Infra.Data\\CleanArchMVC.Infra.Data.csproj",
+        "projectUniqueName": "C:\\Users\\Rafael\\Desktop\\ESTUDOS\\C#\\CleanArchMVC\\CleanArchMVC.Infra.Data\\CleanArchMVC.Infra.Data.csproj",
         "projectName": "CleanArchMVC.Infra.Data",
-        "projectPath": "C:\\Users\\Rafael\\Desktop\\Estudos\\C#\\CleanArchMVC\\CleanArchMVC.Infra.Data\\CleanArchMVC.Infra.Data.csproj",
+        "projectPath": "C:\\Users\\Rafael\\Desktop\\ESTUDOS\\C#\\CleanArchMVC\\CleanArchMVC.Infra.Data\\CleanArchMVC.Infra.Data.csproj",
         "packagesPath": "C:\\Users\\Rafael\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Rafael\\Desktop\\Estudos\\C#\\CleanArchMVC\\CleanArchMVC.Infra.Data\\obj\\",
+        "outputPath": "C:\\Users\\Rafael\\Desktop\\ESTUDOS\\C#\\CleanArchMVC\\CleanArchMVC.Infra.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
           "C:\\Users\\Rafael\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -162,16 +189,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://pkgs.dev.azure.com/Idib/Idib/_packaging/InstitutoNuget/nuget/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Rafael\\Desktop\\Estudos\\C#\\CleanArchMVC\\CleanArchMVC.Domain\\CleanArchMVC.Domain.csproj": {
-                "projectPath": "C:\\Users\\Rafael\\Desktop\\Estudos\\C#\\CleanArchMVC\\CleanArchMVC.Domain\\CleanArchMVC.Domain.csproj"
+              "C:\\Users\\Rafael\\Desktop\\ESTUDOS\\C#\\CleanArchMVC\\CleanArchMVC.Domain\\CleanArchMVC.Domain.csproj": {
+                "projectPath": "C:\\Users\\Rafael\\Desktop\\ESTUDOS\\C#\\CleanArchMVC\\CleanArchMVC.Domain\\CleanArchMVC.Domain.csproj"
               }
             }
           }
@@ -218,26 +243,41 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Rafael\\Desktop\\Estudos\\C#\\CleanArchMVC\\CleanArchMVC.Infra.IoC\\CleanArchMVC.Infra.IoC.csproj": {
+    "C:\\Users\\Rafael\\Desktop\\ESTUDOS\\C#\\CleanArchMVC\\CleanArchMVC.Infra.IoC\\CleanArchMVC.Infra.IoC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Rafael\\Desktop\\Estudos\\C#\\CleanArchMVC\\CleanArchMVC.Infra.IoC\\CleanArchMVC.Infra.IoC.csproj",
+        "projectUniqueName": "C:\\Users\\Rafael\\Desktop\\ESTUDOS\\C#\\CleanArchMVC\\CleanArchMVC.Infra.IoC\\CleanArchMVC.Infra.IoC.csproj",
         "projectName": "CleanArchMVC.Infra.IoC",
-        "projectPath": "C:\\Users\\Rafael\\Desktop\\Estudos\\C#\\CleanArchMVC\\CleanArchMVC.Infra.IoC\\CleanArchMVC.Infra.IoC.csproj",
+        "projectPath": "C:\\Users\\Rafael\\Desktop\\ESTUDOS\\C#\\CleanArchMVC\\CleanArchMVC.Infra.IoC\\CleanArchMVC.Infra.IoC.csproj",
         "packagesPath": "C:\\Users\\Rafael\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Rafael\\Desktop\\Estudos\\C#\\CleanArchMVC\\CleanArchMVC.Infra.IoC\\obj\\",
+        "outputPath": "C:\\Users\\Rafael\\Desktop\\ESTUDOS\\C#\\CleanArchMVC\\CleanArchMVC.Infra.IoC\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
           "C:\\Users\\Rafael\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -249,22 +289,20 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://pkgs.dev.azure.com/Idib/Idib/_packaging/InstitutoNuget/nuget/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Rafael\\Desktop\\Estudos\\C#\\CleanArchMVC\\CleanArchMVC.Application\\CleanArchMVC.Application.csproj": {
-                "projectPath": "C:\\Users\\Rafael\\Desktop\\Estudos\\C#\\CleanArchMVC\\CleanArchMVC.Application\\CleanArchMVC.Application.csproj"
+              "C:\\Users\\Rafael\\Desktop\\ESTUDOS\\C#\\CleanArchMVC\\CleanArchMVC.Application\\CleanArchMVC.Application.csproj": {
+                "projectPath": "C:\\Users\\Rafael\\Desktop\\ESTUDOS\\C#\\CleanArchMVC\\CleanArchMVC.Application\\CleanArchMVC.Application.csproj"
               },
-              "C:\\Users\\Rafael\\Desktop\\Estudos\\C#\\CleanArchMVC\\CleanArchMVC.Domain\\CleanArchMVC.Domain.csproj": {
-                "projectPath": "C:\\Users\\Rafael\\Desktop\\Estudos\\C#\\CleanArchMVC\\CleanArchMVC.Domain\\CleanArchMVC.Domain.csproj"
+              "C:\\Users\\Rafael\\Desktop\\ESTUDOS\\C#\\CleanArchMVC\\CleanArchMVC.Domain\\CleanArchMVC.Domain.csproj": {
+                "projectPath": "C:\\Users\\Rafael\\Desktop\\ESTUDOS\\C#\\CleanArchMVC\\CleanArchMVC.Domain\\CleanArchMVC.Domain.csproj"
               },
-              "C:\\Users\\Rafael\\Desktop\\Estudos\\C#\\CleanArchMVC\\CleanArchMVC.Infra.Data\\CleanArchMVC.Infra.Data.csproj": {
-                "projectPath": "C:\\Users\\Rafael\\Desktop\\Estudos\\C#\\CleanArchMVC\\CleanArchMVC.Infra.Data\\CleanArchMVC.Infra.Data.csproj"
+              "C:\\Users\\Rafael\\Desktop\\ESTUDOS\\C#\\CleanArchMVC\\CleanArchMVC.Infra.Data\\CleanArchMVC.Infra.Data.csproj": {
+                "projectPath": "C:\\Users\\Rafael\\Desktop\\ESTUDOS\\C#\\CleanArchMVC\\CleanArchMVC.Infra.Data\\CleanArchMVC.Infra.Data.csproj"
               }
             }
           }
@@ -299,12 +337,26 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

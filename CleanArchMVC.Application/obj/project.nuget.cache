@@ -1,12 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "hfFRbTuwsUSGhZMeBGtCoCRQcc1BLCX6/zUUaa/TquC4o9prh77oDA3GWcBIEcCTiS9ihk1n+iY7xju8vHXq6A==",
+  "dgSpecHash": "Ck4SFChWJVGchtk1ftN9xwhbYFrSYMqWeOzUE1cs3UZGtJ7+uV5EFk3u5ZA9w4rkQZhSPw0RLu8eZ3jsyE66fw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Rafael\\Desktop\\Estudos\\C#\\CleanArchMVC\\CleanArchMVC.Application\\CleanArchMVC.Application.csproj",
+  "projectFilePath": "C:\\Users\\Rafael\\Desktop\\ESTUDOS\\C#\\CleanArchMVC\\CleanArchMVC.Application\\CleanArchMVC.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Rafael\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Rafael\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
-    "C:\\Users\\Rafael\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512"
+    "C:\\Users\\Rafael\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\Rafael\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\Rafael\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\Rafael\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }
