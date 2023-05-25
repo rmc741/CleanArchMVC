@@ -1,9 +1,5 @@
 ﻿using CleanArchMVC.Domain.Account;
 using Microsoft.AspNetCore.Identity;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace CleanArchMVC.Infra.Data.Identity
@@ -12,7 +8,7 @@ namespace CleanArchMVC.Infra.Data.Identity
     {
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly SignInManager<ApplicationUser> _signInManager;
-        public AuthenticateService(SignInManager<ApplicationUser> signInManager , UserManager<ApplicationUser> userManager)
+        public AuthenticateService(SignInManager<ApplicationUser> signInManager, UserManager<ApplicationUser> userManager)
         {
             _userManager = userManager;
             _signInManager = signInManager;
