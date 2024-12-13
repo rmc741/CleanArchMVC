@@ -1,41 +1,36 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Rafael\\Desktop\\Estudos\\C#\\CleanArchMVC\\CleanArchMvc.Domain.Tests\\CleanArchMvc.Domain.Tests.csproj": {}
+    "C:\\Users\\tiago\\Desktop\\Estudos\\CleanArchMVC\\CleanArchMvc.Domain.Tests\\CleanArchMvc.Domain.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Rafael\\Desktop\\Estudos\\C#\\CleanArchMVC\\CleanArchMvc.Domain.Tests\\CleanArchMvc.Domain.Tests.csproj": {
+    "C:\\Users\\tiago\\Desktop\\Estudos\\CleanArchMVC\\CleanArchMvc.Domain.Tests\\CleanArchMvc.Domain.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Rafael\\Desktop\\Estudos\\C#\\CleanArchMVC\\CleanArchMvc.Domain.Tests\\CleanArchMvc.Domain.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\tiago\\Desktop\\Estudos\\CleanArchMVC\\CleanArchMvc.Domain.Tests\\CleanArchMvc.Domain.Tests.csproj",
         "projectName": "CleanArchMvc.Domain.Tests",
-        "projectPath": "C:\\Users\\Rafael\\Desktop\\Estudos\\C#\\CleanArchMVC\\CleanArchMvc.Domain.Tests\\CleanArchMvc.Domain.Tests.csproj",
-        "packagesPath": "C:\\Users\\Rafael\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Rafael\\Desktop\\Estudos\\C#\\CleanArchMVC\\CleanArchMvc.Domain.Tests\\obj\\",
+        "projectPath": "C:\\Users\\tiago\\Desktop\\Estudos\\CleanArchMVC\\CleanArchMvc.Domain.Tests\\CleanArchMvc.Domain.Tests.csproj",
+        "packagesPath": "C:\\Users\\tiago\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tiago\\Desktop\\Estudos\\CleanArchMVC\\CleanArchMvc.Domain.Tests\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Rafael\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\tiago\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net5.0"
+          "net8.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://pkgs.dev.azure.com/Idib/Idib/_packaging/InstitutoNuget/nuget/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Rafael\\Desktop\\Estudos\\C#\\CleanArchMVC\\CleanArchMVC.Domain\\CleanArchMVC.Domain.csproj": {
-                "projectPath": "C:\\Users\\Rafael\\Desktop\\Estudos\\C#\\CleanArchMVC\\CleanArchMVC.Domain\\CleanArchMVC.Domain.csproj"
+              "C:\\Users\\tiago\\Desktop\\Estudos\\CleanArchMVC\\CleanArchMvc.Domain\\CleanArchMvc.Domain.csproj": {
+                "projectPath": "C:\\Users\\tiago\\Desktop\\Estudos\\CleanArchMVC\\CleanArchMvc.Domain\\CleanArchMvc.Domain.csproj"
               }
             }
           }
@@ -44,35 +39,40 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "dependencies": {
             "FluentAssertions": {
               "target": "Package",
-              "version": "[5.10.3, )"
+              "version": "[6.12.0, )"
             },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
-              "version": "[17.5.0, )"
+              "version": "[17.8.0, )"
             },
             "coverlet.collector": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[3.2.0, )"
+              "version": "[6.0.0, )"
             },
             "xunit": {
               "target": "Package",
-              "version": "[2.4.2, )"
+              "version": "[2.6.2, )"
             },
             "xunit.runner.visualstudio": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[2.4.5, )"
+              "version": "[2.5.4, )"
             }
           },
           "imports": [
@@ -91,39 +91,34 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Rafael\\Desktop\\Estudos\\C#\\CleanArchMVC\\CleanArchMVC.Domain\\CleanArchMVC.Domain.csproj": {
+    "C:\\Users\\tiago\\Desktop\\Estudos\\CleanArchMVC\\CleanArchMvc.Domain\\CleanArchMvc.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Rafael\\Desktop\\Estudos\\C#\\CleanArchMVC\\CleanArchMVC.Domain\\CleanArchMVC.Domain.csproj",
-        "projectName": "CleanArchMVC.Domain",
-        "projectPath": "C:\\Users\\Rafael\\Desktop\\Estudos\\C#\\CleanArchMVC\\CleanArchMVC.Domain\\CleanArchMVC.Domain.csproj",
-        "packagesPath": "C:\\Users\\Rafael\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Rafael\\Desktop\\Estudos\\C#\\CleanArchMVC\\CleanArchMVC.Domain\\obj\\",
+        "projectUniqueName": "C:\\Users\\tiago\\Desktop\\Estudos\\CleanArchMVC\\CleanArchMvc.Domain\\CleanArchMvc.Domain.csproj",
+        "projectName": "CleanArchMvc.Domain",
+        "projectPath": "C:\\Users\\tiago\\Desktop\\Estudos\\CleanArchMVC\\CleanArchMvc.Domain\\CleanArchMvc.Domain.csproj",
+        "packagesPath": "C:\\Users\\tiago\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tiago\\Desktop\\Estudos\\CleanArchMVC\\CleanArchMvc.Domain\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Rafael\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\tiago\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net5.0"
+          "net8.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://pkgs.dev.azure.com/Idib/Idib/_packaging/InstitutoNuget/nuget/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {}
           }
         },
@@ -131,11 +126,16 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "imports": [
             "net461",
             "net462",
@@ -152,7 +152,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

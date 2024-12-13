@@ -1,13 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace CleanArchMvc.Application.Products.Commands;
 
-namespace CleanArchMVC.Application.Products.Commands
+public class ProductUpdateCommand : ProductCommand
 {
-    public class ProductUpdateCommand : ProductCommand
-    {
-        public int Id { get; set; }
-    }
+    public int Id { get; set; }
 }

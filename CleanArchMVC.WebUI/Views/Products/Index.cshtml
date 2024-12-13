@@ -1,4 +1,4 @@
-﻿@model IEnumerable<CleanArchMVC.Application.DTOs.ProductDTO>
+﻿@model IEnumerable<CleanArchMvc.Application.DTOs.ProductDTO>
 
 @{
     ViewData["Title"] = "Products Management";
@@ -37,9 +37,7 @@
                 <th>
                     @Html.DisplayNameFor(model => model.Price)
                 </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Stock)
-                </th>
+                <th></th>
             </tr>
         </thead>
         <tbody>
@@ -56,18 +54,13 @@
                         @Html.DisplayFor(modelItem => item.Price)
                     </td>
                     <td>
-                        @Html.DisplayFor(modelItem => item.Stock)
-                    </td>
-                    <td>
-                        <a asp-action="Edit" asp-route-id="@item.Id" title="Edit" class="btn btn-warning">
+                        <a asp-action="Edit" asp-route-id="@item.Id" title="Edita" class="btn btn-warning">
                             <span class="fas fa-edit">Edit</span>
                         </a>
-
                         <a asp-action="Details" asp-route-id="@item.Id" title="Details" class="btn btn-primary">
                             <span class="fas fa-search">Details</span>
                         </a>
-
-                        <a asp-action="Delete" asp-route-id="@item.Id" title="Delete" class="btn btn-danger">
+                        <a asp-action="Delete" asp-route-id="@item.Id" title="Deleta" class="btn btn-danger">
                             <span class="fas fa-trash-alt">Delete</span>
                         </a>
                     </td>

@@ -1,10 +1,14 @@
-﻿@model CleanArchMVC.Application.DTOs.ProductDTO
+﻿@model CleanArchMvc.Application.DTOs.ProductDTO
 
 <h2>Register new Product</h2>
 
+<form asp-action="Create">
 
-<form asp-action="Create" method="post">
     <div class="form-horizontal">
+
+        <hr />
+
+        <div asp-validation-summary="All" class="text-danger"></div>
 
         <div class="form-group">
             <label asp-for="Name" class="col-md-2 control-label"></label>
@@ -46,6 +50,7 @@
             </div>
         </div>
 
+
         <div class="form-group">
             <label asp-for="CategoryId" class="col-md-2 control-label"></label>
             <div class="col-md-10">
@@ -59,6 +64,5 @@
                 <a asp-action="Index" class="btn btn-info">Back to List</a>
             </div>
         </div>
-
-     </div>
+    </div>
 </form>

@@ -1,15 +1,14 @@
 ﻿using AutoMapper;
-using CleanArchMVC.Application.DTOs;
-using CleanArchMVC.Application.Products.Commands;
+using CleanArchMvc.Application.DTOs;
+using CleanArchMvc.Application.Products.Commands;
 
-namespace CleanArchMVC.Application.Mappings
+namespace CleanArchMvc.Application.Mappings;
+
+public class DTOToCommandMappingProfile : Profile
 {
-    public class DTOToCommandMappingProfile : Profile
+    public DTOToCommandMappingProfile()
     {
-        public DTOToCommandMappingProfile()
-        {
-            CreateMap<ProductDTO, ProductCreateCommand>();
-            CreateMap<ProductDTO, ProductUpdateCommand>();
-        }
+        CreateMap<ProductDTO, ProductCreateCommand>();
+        CreateMap<ProductDTO, ProductUpdateCommand>();
     }
 }

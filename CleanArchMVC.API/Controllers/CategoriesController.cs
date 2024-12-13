@@ -1,80 +1,92 @@
-﻿using CleanArchMVC.Application.DTOs;
-using CleanArchMVC.Application.Interfaces;
+﻿using CleanArchMvc.Application.DTOs;
+using CleanArchMvc.Application.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using System.Collections.Generic;
-using System.Threading.Tasks;
 
-namespace CleanArchMVC.API.Controllers
+namespace CleanArchMvc.API.Controllers;
+
+[Route("api/[controller]")]
+[ApiController]
+[Authorize]
+public class CategoriesController : ControllerBase
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class CategoriesController : ControllerBase
+    private readonly ICategoryService _categoryService;
+    public CategoriesController(ICategoryService categoryService)
     {
-        private readonly ICategoryService _categoryService;
-        public CategoriesController(ICategoryService categoryService)
+        _categoryService = categoryService;
+    }
+
+    [HttpGet]
+    public async Task<ActionResult<IEnumerable<CategoryDTO>>> Get()
+    {
+        var categories = await _categoryService.GetCategories();
+        if (categories == null)
         {
-            _categoryService = categoryService;
+            return NotFound("Categories not found");
+        }
+        return Ok(categories);
+    }
+
+    /// <summary>
+    /// Localiza uma categoria específica pelo Id
+    /// </summary>
+    /// <param name="id"></param>
+    /// <returns></returns>
+
+    [HttpGet("{id:int}", Name = "GetCategory")]
+    public async Task<ActionResult<CategoryDTO>> Get(int id)
+    {
+        var category = await _categoryService.GetById(id);
+        if (category == null)
+        {
+            return NotFound("Category not found");
+        }
+        return Ok(category);
+    }
+
+    [HttpPost]
+    public async Task<ActionResult> Post([FromBody] CategoryDTO categoryDto)
+    {
+        if (categoryDto == null)
+            return BadRequest("Invalid Data");
+
+        await _categoryService.Add(categoryDto);
+
+        return new CreatedAtRouteResult("GetCategory", new { id = categoryDto.Id },
+            categoryDto);
+    }
+
+    [HttpPut]
+    public async Task<ActionResult> Put(int id, [FromBody] CategoryDTO categoryDto)
+    {
+        if (id != categoryDto.Id)
+            return BadRequest();
+
+        if (categoryDto == null)
+            return BadRequest();
+
+        await _categoryService.Update(categoryDto);
+
+        return Ok(categoryDto);
+    }
+
+    /// <summary>
+    /// Deleta uma categoria específica
+    /// </summary>
+    /// <param name="id"></param>
+    /// <returns></returns>
+    [HttpDelete("{id:int}")]
+    public async Task<ActionResult<CategoryDTO>> Delete(int id)
+    {
+        var category = await _categoryService.GetById(id);
+        if (category == null)
+        {
+            return NotFound("Category not found");
         }
 
-        [HttpGet]
-        public async Task<ActionResult<IEnumerable<CategoryDTO>>> GetAll()
-        {
-            var categories = await _categoryService.GetCategories();
-            if (categories == null)
-            {
-                return NotFound("Categories not found");
-            }
-            return Ok(categories);
-        }
+        await _categoryService.Remove(id);
 
-        [HttpGet("{id}", Name = "GetCategory")]
-        public async Task<ActionResult<CategoryDTO>> GetById(int id)
-        {
-            var category = await _categoryService.GetCategoryById(id);
-            if (category == null)
-            {
-                return NotFound("Category not found");
-            }
-            return Ok(category);
-        }
+        return Ok(category);
 
-        [HttpPost]
-        public async Task<ActionResult<CategoryDTO>> PostCategory([FromBody] CategoryDTO categoryDto)
-        {
-            if (categoryDto == null)
-            {
-                return BadRequest("Invalid Data");
-            }
-
-            await _categoryService.Add(categoryDto);
-
-            return new CreatedAtRouteResult("GetCategory", new { id = categoryDto.Id }, categoryDto);
-        }
-
-        [HttpPut("{id}")]
-        public async Task<ActionResult<CategoryDTO>> UpdateCategory(int id, [FromBody] CategoryDTO categoryDTO)
-        {
-            if (id != categoryDTO.Id)
-                return BadRequest();
-
-
-            if (categoryDTO == null)
-                return BadRequest();
-
-            await _categoryService.Update(categoryDTO);
-
-            return Ok(categoryDTO);
-        }
-
-        [HttpDelete("{id}")]
-        public async Task<ActionResult<CategoryDTO>> DeleteCategory(int id)
-        {
-            var category = await _categoryService.GetCategoryById(id);
-            if (category == null)
-                return NotFound("Category not found");
-
-            await _categoryService.Remove(id);
-            return Ok(category);
-        }
     }
 }
